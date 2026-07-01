@@ -94,7 +94,7 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
   );
 }
 
-function ChannelRow({ icon: Icon, label, value, href }: { icon: React.ComponentType<{ className?: string }>; label: string; value: string; href: string }) {
+function ChannelRow({ icon: Icon, label, value, href }: { icon: React.ComponentType<{ className?: string; strokeWidth?: number }>; label: string; value: string; href: string }) {
   return (
     <li>
       <a href={href} className="group flex items-start gap-4 border-b border-border pb-6">
